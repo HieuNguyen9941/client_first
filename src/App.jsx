@@ -13,7 +13,7 @@ function App() {
   function addTodo(todo) {
     axios({
       method: "post",
-      url: `${api_url}/todo`,
+      url: `${api_url}/api/todo`,
       data: todo,
     }).then((res) => {
       let arr = [...listTodo];
@@ -35,7 +35,7 @@ function App() {
   function delete_todo(id) {
     axios({
       method: "delete",
-      url: `${api_url}/todo/?_id=${id}`,
+      url: `${api_url}/api/todo/?_id=${id}`,
     }).then((res) => {
       let arr = [...listTodo];
       let index = arr.findIndex((x) => x._id === id);
@@ -57,7 +57,7 @@ function App() {
   useEffect(() => {
     axios({
       method: "get",
-      url: `${api_url}/todo`,
+      url: `${api_url}/api/todo`,
     }).then((res) => {
       setListTodo(res.data);
     });
