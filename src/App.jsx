@@ -66,7 +66,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>MY FORM</h1>
+        <h1>React App</h1>
         <div className="row">
           <div className="col-sm">
             <CreateInput addTodo={addTodo} />
@@ -74,6 +74,7 @@ function App() {
         </div>
         <div>
         </div>
+        <h3>Table</h3>
         <div className="col-sm">
             <ListTodo list={listTodo} delete_todo={delete_todo} />
         </div>

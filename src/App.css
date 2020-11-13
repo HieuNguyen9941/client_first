@@ -1,11 +1,11 @@
 .App{
   text-align: center;
 }
-h1{
-  color:blue;
+h1,h3{
+  color:lightseagreen;
 }
-label{
-  color:green;
+h3{
+  text-align: left;
 }
 
 .App-logo {
